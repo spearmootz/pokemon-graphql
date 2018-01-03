@@ -1,7 +1,7 @@
 # pokemon-graphql
 a graphql pokemon server built with node
 
-### check it out at https://vast-sierra-18782.herokuapp.com/graphiql
+### check it out at https://vast-sierra-18782.herokuapp.com or hit it with requests at /graphql
 
 Here is the query definition.
 
