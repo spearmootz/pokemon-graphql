@@ -14,7 +14,17 @@ const app = express();
 app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
 
 // GraphiQL, a visual editor for queries
-app.use('/', graphiqlExpress({ endpointURL: '/graphql' }));
+app.use('/', graphiqlExpress({ 
+  endpointURL: '/graphql',
+  query: `
+  {
+    pokemons {
+      id
+      name
+    }
+  }
+  `
+}));
 
 // Start the server
 app.listen(port, () => {
